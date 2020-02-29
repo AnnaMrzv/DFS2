@@ -1,0 +1,25 @@
+<div class="circle">C</div>
+<style>
+	.circle {
+  color: white;
+  font-size: 80px;
+  font-family: Courier;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  top: 50%;
+  left: 50%;
+  background: black;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+</style>
+<script type="text/javascript">
+window.addEventListener("mousemove", function(event) {
+ 
+  document.getElementsByClassName("circle")[0].style.top = event.clientY + "px";
+  document.getElementsByClassName("circle")[0].style.left = event.clientX + "px";
+});
+</script>
+
